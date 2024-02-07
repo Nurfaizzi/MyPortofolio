@@ -75,6 +75,7 @@ export default function Home() {
       github: "https://github.com/Nurfaizzi/Admin-Resto",
       Email: "mudo",
       password: "test123",
+      Links : "https://admin-resto.vercel.app/"
     },
     {
       id: 2,
