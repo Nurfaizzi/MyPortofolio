@@ -270,8 +270,7 @@ export default function Home() {
                       </div>
                       <div className="flex-column m-auto text-center justify-center text-sm font-semibold pt-3 gap-8">
                         <p>Authentication</p>
-                        <p>Email Or Username : {obj.Email}</p>
-                        <p>Password : {obj.password}</p>
+                        <a href={obj.github}>Github</a>
                       </div>
 
                       <div className="flex m-auto text-center justify-center gap-4 pt-3">
