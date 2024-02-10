@@ -239,10 +239,10 @@ export default function Home() {
             <div className="grid gap-8 pl-8  m-auto p-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 border-blue-500 items-center justify-center ">
               {menu.map((obj, key) => (
                 <div key={key}>
-                  <div className="max-w-xl bg-white border border-gray-200 rounded-2xl shadow  items-center justify-center">
+                  <div className="max-w-xl bg-white border border-gray-200 rounded-2xl shadow  items-center justify-center ">
                     <a href="#">
                       <Image
-                        className=" object-fill  h-48 "
+                        className=" object-fill  h-48 hover:scale-125"
                         src={obj.image}
                         alt=""
                       />
