@@ -240,7 +240,7 @@ export default function Home() {
               {menu.map((obj, key) => (
                 <div key={key}>
                   <div className="max-w-xl bg-white border border-gray-200 rounded-2xl shadow  items-center justify-center ">
-                    <a href="#">
+                    <a >
                       <Image
                         className=" object-fill  h-48 hover:scale-125"
                         src={obj.image}
