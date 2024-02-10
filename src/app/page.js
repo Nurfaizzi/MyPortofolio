@@ -14,6 +14,7 @@ import cardthree from "../../public/cardthree.png";
 import github from "../../public/github.svg";
 import linkind from "../../public/linkedin.svg";
 import telegram from "../../public/telegram.webp";
+
 export default function Home() {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
@@ -75,7 +76,7 @@ export default function Home() {
       github: "https://github.com/Nurfaizzi/Admin-Resto",
       Email: "mudo",
       password: "test123",
-      Links : "https://admin-resto.vercel.app/"
+      Links: "https://admin-resto.vercel.app/",
     },
     {
       id: 2,
@@ -109,6 +110,16 @@ export default function Home() {
       password: "123456",
     },
   ];
+
+  const onButtonClick = () => {
+    const pdfUrl = "Sample.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div>
@@ -151,14 +162,17 @@ export default function Home() {
                 >
                   Hire Me
                 </Link>
-                <Link
-                  href="/"
-                  className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-                >
-                  <span className="block bg-orange-400 rounded-full px-5 py-2">
+                <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
+                  <a
+                    href="https://me-qr.com/6b7AnjUk"
+                    alt="alt text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-orange-400 rounded-full px-5 py-2"
+                  >
                     Download CV
-                  </span>
-                </Link>
+                  </a>
+                </div>
               </div>
             </motion.div>
             <motion.div
@@ -171,7 +185,7 @@ export default function Home() {
                 <Image
                   src={logo}
                   alt="hero image"
-                  className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 pt-14 md:pt-40 sm:top-40 xl:pt-56"
+                  className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 pt-14 md:pt-0 sm:top-40 xl:pt-56"
                   width={300}
                   height={300}
                 />
