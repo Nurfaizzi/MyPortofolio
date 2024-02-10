@@ -111,15 +111,6 @@ export default function Home() {
     },
   ];
 
-  const onButtonClick = () => {
-    const pdfUrl = "Sample.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <div>
@@ -165,9 +156,6 @@ export default function Home() {
                 <div className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
                   <a
                     href="https://me-qr.com/6b7AnjUk"
-                    alt="alt text"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="block bg-orange-400 rounded-full px-5 py-2"
                   >
                     Download CV
@@ -175,10 +163,8 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+            <div
+
               className="col-span-4 place-self-center mt-4 lg:mt-0"
             >
               <div className=" w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] xl:pr-0 md:pr-8 sm:pr-8 relative">
@@ -190,7 +176,7 @@ export default function Home() {
                   height={300}
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </section>
       </div>
@@ -253,7 +239,7 @@ export default function Home() {
             <div className="grid gap-8 pl-8  m-auto p-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 border-blue-500 items-center justify-center ">
               {menu.map((obj, key) => (
                 <div key={key}>
-                  <div className="max-w-xl bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 items-center justify-center">
+                  <div className="max-w-xl bg-white border border-gray-200 rounded-2xl shadow  items-center justify-center">
                     <a href="#">
                       <Image
                         className=" object-fill  h-48 "
