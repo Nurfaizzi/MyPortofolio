@@ -317,7 +317,7 @@ export default function Home() {
                   <a href="https://t.me/NurfaizziRasyid">
                     <Image src={telegram} alt="" width={45} />
                   </a>
-                  <div className="px-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white xl:mt-3 mt-2 md:mt-3 ">
+                  <div className="px-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white xl:mt-3 mt-1 md:mt-3 ">
                   <a
                     href="https://me-qr.com/6b7AnjUk"
                     className="block"
