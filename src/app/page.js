@@ -319,7 +319,7 @@ export default function Home() {
                   </a>
                   <div className="px-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white xl:mt-3 mt-1 md:mt-3 ">
                   <a
-                    href="https://me-qr.com/6b7AnjUk"
+                    href="https://qrco.de/beoJyM"
                     className="block"
                   >
                     Download My CV
