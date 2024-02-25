@@ -14,7 +14,8 @@ import cardthree from "../../public/cardthree.png";
 import github from "../../public/github.svg";
 import linkind from "../../public/linkedin.svg";
 import telegram from "../../public/telegram.webp";
-
+import certificate from "../../public/certificate.png"
+import binar from "../../public/binar.png"
 export default function Home() {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
@@ -42,7 +43,11 @@ export default function Home() {
       id: "education",
       content: (
         <ul className="list-disc pl-2">
-          <li>Binar Academy</li>
+            <Image
+                        className=" object-fill  h-48 hover:scale-125"
+                        src={binar}
+                        alt=""
+                      />
         </ul>
       ),
     },
@@ -51,7 +56,11 @@ export default function Home() {
       id: "certifications",
       content: (
         <ul className="list-disc pl-2">
-          <li>Binar Academy</li>
+           <Image
+                        className=" object-fill  h-48 hover:scale-125"
+                        src={certificate}
+                        alt=""
+                      />
         </ul>
       ),
     },
